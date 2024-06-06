@@ -21,6 +21,12 @@
     gap: 15px;
 }
 
+/* VIDEOS */
+.videos__item{
+    height: 303px;
+    width: 280px;
+}
+
 /* MENU */
 .menu__container {
     position: fixed;
