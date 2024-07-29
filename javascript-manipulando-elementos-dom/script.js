@@ -13,9 +13,9 @@ const iniciarOuPausarBtIcone = document.querySelector(
 );
 const tempoNaTela = document.querySelector("#timer");
 
-const musica = new Audio("/sons/luna-rise-part-one.mp3");
-const audioPlay = new Audio("/sons/play.wav");
-const audioPausa = new Audio("/sons/pause.mp3");
+const musica = new Audio("./sons/luna-rise-part-one.mp3");
+const audioPlay = new Audio("./sons/play.wav");
+const audioPausa = new Audio("./sons/pause.mp3");
 const audioTempoFinalizado = new Audio("./sons/beep.mp3");
 
 let tempoDecorridoEmSegundos = 1500;
@@ -55,7 +55,7 @@ function alterarContexto(contexto) {
     contexto.classList.remove("active");
   });
   html.setAttribute("data-contexto", contexto);
-  banner.setAttribute("src", `/imagens/${contexto}.png`);
+  banner.setAttribute("src", `./imagens/${contexto}.png`);
   switch (contexto) {
     case "foco":
       titulo.innerHTML = `
